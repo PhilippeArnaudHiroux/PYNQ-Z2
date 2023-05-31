@@ -68,13 +68,8 @@
 !*.bmm
 !*.xmp
 
-#PDFs
-!*.pdf
-
-#ZIP
 !*.zip
 
 !*.xsa
-!*.mp4
 
 # End of https://www.toptal.com/developers/gitignore/api/vivado
