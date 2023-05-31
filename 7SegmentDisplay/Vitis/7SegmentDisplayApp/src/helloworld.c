@@ -19,7 +19,6 @@
 #define NINE	0xF3 //1111 0011
 #define DOT		0x8	 //0000 1000
 
-
 XGpio Gpio;
 
 int main()
