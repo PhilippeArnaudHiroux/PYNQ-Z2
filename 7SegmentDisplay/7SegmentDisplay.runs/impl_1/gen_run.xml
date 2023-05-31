@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1685530277">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1685535015">
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="BITSTR-MMI" Name="design_1_wrapper.mmi"/>
@@ -100,16 +100,15 @@
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
-    <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/SegmentDisplayXdc.xdc">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+    <File Path="$PSRCDIR/constrs_2/new/SegmentDisplayXdc.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/SegmentDisplayXdc.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_2/new/SegmentDisplayXdc.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

@@ -110,8 +110,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/SoC/PYNQ-Z2/7SegmentDisplay/7SegmentDisplay.srcs/constrs_1/new/SegmentDisplayXdc.xdc
-set_property used_in_implementation false [get_files D:/SoC/PYNQ-Z2/7SegmentDisplay/7SegmentDisplay.srcs/constrs_1/new/SegmentDisplayXdc.xdc]
+read_xdc D:/SoC/PYNQ-Z2/7SegmentDisplay/7SegmentDisplay.srcs/constrs_2/new/SegmentDisplayXdc.xdc
+set_property used_in_implementation false [get_files D:/SoC/PYNQ-Z2/7SegmentDisplay/7SegmentDisplay.srcs/constrs_2/new/SegmentDisplayXdc.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

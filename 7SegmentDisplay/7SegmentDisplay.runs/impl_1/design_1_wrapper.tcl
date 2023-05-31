@@ -144,7 +144,7 @@ OPTRACE "add files" START { }
   add_files D:/SoC/PYNQ-Z2/7SegmentDisplay/7SegmentDisplay.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/SoC/PYNQ-Z2/7SegmentDisplay/7SegmentDisplay.srcs/constrs_1/new/SegmentDisplayXdc.xdc
+  read_xdc D:/SoC/PYNQ-Z2/7SegmentDisplay/7SegmentDisplay.srcs/constrs_2/new/SegmentDisplayXdc.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

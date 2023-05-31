@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date                      : Wed May 31 12:53:06 2023
+| Date                      : Wed May 31 14:12:06 2023
 | Host                      : DESKTOP-89VC88I running 64-bit major release  (build 9200)
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
@@ -409,8 +409,8 @@ Table of Contents
 | W12        |                              |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | W13        | SegmentDiisplayPins_tri_o[7] | High Range | IO_L4N_T0_34            | OUTPUT      | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W14        | SegmentDiisplayPins_tri_o[0] | High Range | IO_L8P_T1_34            | OUTPUT      | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| W15        | SegmentDiisplayPins_tri_o[5] | High Range | IO_L10N_T1_34           | OUTPUT      | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| W16        |                              | High Range | IO_L18N_T2_34           | User IO     |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| W15        |                              | High Range | IO_L10N_T1_34           | User IO     |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| W16        | SegmentDiisplayPins_tri_o[5] | High Range | IO_L18N_T2_34           | OUTPUT      | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W17        |                              | High Range | VCCO_34                 | VCCO        |                   |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | W18        |                              | High Range | IO_L22P_T3_34           | User IO     |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W19        |                              | High Range | IO_L22N_T3_34           | User IO     |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
