@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="7SegmentDisplayApp" location="D:/SoC/PYNQ-Z2/7SegmentDisplay/Vitis/7SegmentDisplayApp" platform="D:/SoC/PYNQ-Z2/7SegmentDisplay/Vitis/7SegmentXsa/export/7SegmentXsa/7SegmentXsa.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="7SegmentDisplayApp_system" sysConfig="7SegmentXsa" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="480110f90bcaf4a2e0c12ef635c0b94f">
-  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1532430191" dirty="true">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1532430191">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1388875806" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
