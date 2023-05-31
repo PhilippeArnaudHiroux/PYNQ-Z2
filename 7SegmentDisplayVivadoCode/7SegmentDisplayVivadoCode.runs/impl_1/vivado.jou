@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed May 31 17:15:50 2023
+# Process ID: 20176
+# Current directory: D:/SoC/PYNQ-Z2/7SegmentDisplayVivadoCode/7SegmentDisplayVivadoCode.runs/impl_1
+# Command line: vivado.exe -log seg7_code.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source seg7_code.tcl -notrace
+# Log file: D:/SoC/PYNQ-Z2/7SegmentDisplayVivadoCode/7SegmentDisplayVivadoCode.runs/impl_1/seg7_code.vdi
+# Journal file: D:/SoC/PYNQ-Z2/7SegmentDisplayVivadoCode/7SegmentDisplayVivadoCode.runs/impl_1\vivado.jou
+# Running On: DESKTOP-89VC88I, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 17033 MB
+#-----------------------------------------------------------
+source seg7_code.tcl -notrace
