@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -109,9 +110,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc D:/SoC/PYNQ-Z2/GPIOInputWithButton/GPIOInputWithButton.srcs/constrs_1/new/GPIOXdc.xdc
+set_property used_in_implementation false [get_files D:/SoC/PYNQ-Z2/GPIOInputWithButton/GPIOInputWithButton.srcs/constrs_1/new/GPIOXdc.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental D:/SoC/PYNQ-Z2/GPIOInputWithButton/GPIOInputWithButton.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
