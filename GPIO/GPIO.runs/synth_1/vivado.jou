@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sat Jun  3 11:35:24 2023
-# Process ID: 12496
+# Start of session at: Sat Jun  3 11:46:50 2023
+# Process ID: 15288
 # Current directory: D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/design_1_wrapper.vds

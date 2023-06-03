@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sat Jun  3 11:35:24 2023
-# Process ID: 12496
+# Start of session at: Sat Jun  3 11:46:50 2023
+# Process ID: 15288
 # Current directory: D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/design_1_wrapper.vds
@@ -11,20 +11,24 @@
 # Running On: DESKTOP-89VC88I, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 17033 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1269.027 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2022.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental D:/SoC/PYNQ-Z2/GPIO/GPIO.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/SoC/PYNQ-Z2/GPIO/GPIO.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8032
+INFO: [Synth 8-7075] Helper process launched with PID 15364
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1269.027 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1253.199 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:43]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'GPIO_0_0_tri_iobuf_0' of component 'IOBUF' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:99]
@@ -35,18 +39,18 @@ INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2022.1/scripts/rt/dat
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'GPIO_0_0_tri_iobuf_3' of component 'IOBUF' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:120]
 INFO: [Synth 8-3491] module 'design_1' declared at 'd:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:579' bound to instance 'design_1_i' of component 'design_1' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:127]
 INFO: [Synth 8-638] synthesizing module 'design_1' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:614]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-12496-DESKTOP-89VC88I/realtime/design_1_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:852]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-12496-DESKTOP-89VC88I/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-12496-DESKTOP-89VC88I/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:876]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-12496-DESKTOP-89VC88I/realtime/design_1_processing_system7_0_0_stub.vhdl:79]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-15288-DESKTOP-89VC88I/realtime/design_1_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:852]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-15288-DESKTOP-89VC88I/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-15288-DESKTOP-89VC88I/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:876]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-15288-DESKTOP-89VC88I/realtime/design_1_processing_system7_0_0_stub.vhdl:79]
 INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_1' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:392]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:78]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-12496-DESKTOP-89VC88I/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:259]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-12496-DESKTOP-89VC88I/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-15288-DESKTOP-89VC88I/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-15288-DESKTOP-89VC88I/realtime/design_1_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:78]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_1' (0#1) [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:392]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_1' declared at 'D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-12496-DESKTOP-89VC88I/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_1' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:1011]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_1' [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-12496-DESKTOP-89VC88I/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_1' declared at 'D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-15288-DESKTOP-89VC88I/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_1' [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:1011]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_1' [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/.Xil/Vivado-15288-DESKTOP-89VC88I/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/synth/design_1.vhd:614]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:43]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
@@ -54,18 +58,18 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is eith
 WARNING: [Synth 8-7129] Port ACLK in module design_1_ps7_0_axi_periph_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1269.027 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1265.309 ; gain = 12.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1269.027 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1265.309 ; gain = 12.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1269.027 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1265.309 ; gain = 12.109
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1269.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1265.309 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -80,25 +84,31 @@ Parsing XDC File [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/ip/design_1
 Finished Parsing XDC File [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_1/design_1_rst_ps7_0_100M_1/design_1_rst_ps7_0_100M_1_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Finished Parsing XDC File [d:/SoC/PYNQ-Z2/GPIO/GPIO.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_1/design_1_rst_ps7_0_100M_1/design_1_rst_ps7_0_100M_1_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
+Parsing XDC File [D:/SoC/PYNQ-Z2/GPIO/GPIO.srcs/constrs_1/new/GPIOXdc.xdc]
+Finished Parsing XDC File [D:/SoC/PYNQ-Z2/GPIO/GPIO.srcs/constrs_1/new/GPIOXdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/SoC/PYNQ-Z2/GPIO/GPIO.srcs/constrs_1/new/GPIOXdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1290.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1286.691 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1290.301 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1286.691 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -370,10 +380,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_c
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -400,25 +410,25 @@ WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_1 is ei
 WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps7_0_axi_periph_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps7_0_axi_periph_1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -436,37 +446,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -495,27 +505,27 @@ Report Cell Usage:
 |7     |OBUF                                 |     2|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1286.691 ; gain = 33.492
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1290.301 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1290.301 ; gain = 21.273
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1286.691 ; gain = 12.109
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1286.691 ; gain = 33.492
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1290.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1286.691 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1298.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1304.527 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
 Synth Design complete, checksum: 1c6bf8cf
 INFO: [Common 17-83] Releasing license: Synthesis
-42 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 1298.438 ; gain = 29.410
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1304.527 ; gain = 51.328
 INFO: [Common 17-1381] The checkpoint 'D:/SoC/PYNQ-Z2/GPIO/GPIO.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jun  3 11:36:49 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  3 11:47:39 2023...
