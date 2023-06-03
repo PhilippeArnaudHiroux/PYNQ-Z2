@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sat Jun  3 16:03:02 2023
-# Process ID: 24824
+# Start of session at: Sat Jun  3 16:13:42 2023
+# Process ID: 21724
 # Current directory: D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/design_1_wrapper.vds
@@ -14,6 +14,7 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SoC/PYNQ-Z2/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2022.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1268.863 ; gain = 0.000
 Command: read_checkpoint -auto_incremental -incremental D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -26,25 +27,25 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24856
+INFO: [Synth 8-7075] Helper process launched with PID 21600
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1254.219 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1268.863 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:42]
 INFO: [Synth 8-3491] module 'design_1' declared at 'd:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:591' bound to instance 'design_1_i' of component 'design_1' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:71]
 INFO: [Synth 8-638] synthesizing module 'design_1' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:623]
-INFO: [Synth 8-3491] module 'design_1_eFPGA_AXI_Core1_0_0' declared at 'D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-24824-DESKTOP-89VC88I/realtime/design_1_eFPGA_AXI_Core1_0_0_stub.vhdl:5' bound to instance 'eFPGA_AXI_Core1_0' of component 'design_1_eFPGA_AXI_Core1_0_0' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:851]
-INFO: [Synth 8-638] synthesizing module 'design_1_eFPGA_AXI_Core1_0_0' [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-24824-DESKTOP-89VC88I/realtime/design_1_eFPGA_AXI_Core1_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-24824-DESKTOP-89VC88I/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:877]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-24824-DESKTOP-89VC88I/realtime/design_1_processing_system7_0_0_stub.vhdl:76]
+INFO: [Synth 8-3491] module 'design_1_eFPGA_AXI_Core1_0_0' declared at 'D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-21724-DESKTOP-89VC88I/realtime/design_1_eFPGA_AXI_Core1_0_0_stub.vhdl:5' bound to instance 'eFPGA_AXI_Core1_0' of component 'design_1_eFPGA_AXI_Core1_0_0' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:851]
+INFO: [Synth 8-638] synthesizing module 'design_1_eFPGA_AXI_Core1_0_0' [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-21724-DESKTOP-89VC88I/realtime/design_1_eFPGA_AXI_Core1_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-21724-DESKTOP-89VC88I/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:877]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-21724-DESKTOP-89VC88I/realtime/design_1_processing_system7_0_0_stub.vhdl:76]
 INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:398]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-24824-DESKTOP-89VC88I/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:263]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-24824-DESKTOP-89VC88I/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-21724-DESKTOP-89VC88I/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-21724-DESKTOP-89VC88I/realtime/design_1_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:398]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-24824-DESKTOP-89VC88I/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:1011]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-24824-DESKTOP-89VC88I/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-21724-DESKTOP-89VC88I/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:1011]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/.Xil/Vivado-21724-DESKTOP-89VC88I/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/synth/design_1.vhd:623]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:42]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
@@ -52,18 +53,18 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is eith
 WARNING: [Synth 8-7129] Port ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1264.676 ; gain = 10.457
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1268.863 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1264.676 ; gain = 10.457
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1268.863 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1264.676 ; gain = 10.457
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1268.863 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1264.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1268.863 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -76,26 +77,30 @@ Parsing XDC File [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/i
 Finished Parsing XDC File [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Finished Parsing XDC File [d:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
+Parsing XDC File [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.srcs/constrs_1/new/eFPGAXdv.xdc]
+Finished Parsing XDC File [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.srcs/constrs_1/new/eFPGAXdv.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.srcs/constrs_1/new/eFPGAXdv.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1270.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1273.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1270.902 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1273.844 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1270.902 ; gain = 16.684
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1273.844 ; gain = 4.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1270.902 ; gain = 16.684
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1273.844 ; gain = 4.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -367,10 +372,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_c
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1270.902 ; gain = 16.684
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1273.844 ; gain = 4.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1270.902 ; gain = 16.684
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1273.844 ; gain = 4.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -397,25 +402,25 @@ WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_0 is ei
 WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1270.902 ; gain = 16.684
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1273.844 ; gain = 4.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1270.902 ; gain = 16.684
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1273.844 ; gain = 4.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1270.902 ; gain = 16.684
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1273.844 ; gain = 4.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1282.117 ; gain = 27.898
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1277.785 ; gain = 8.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -433,37 +438,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1288.352 ; gain = 34.133
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.578 ; gain = 14.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1288.352 ; gain = 34.133
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.578 ; gain = 14.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1288.352 ; gain = 34.133
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.578 ; gain = 14.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1288.352 ; gain = 34.133
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.578 ; gain = 14.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1288.352 ; gain = 34.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.578 ; gain = 14.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1288.352 ; gain = 34.133
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.578 ; gain = 14.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -491,24 +496,24 @@ Report Cell Usage:
 |6     |OBUF                                 |     4|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1288.352 ; gain = 34.133
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.578 ; gain = 14.715
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1288.352 ; gain = 27.906
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1288.352 ; gain = 34.133
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1283.578 ; gain = 9.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.578 ; gain = 14.715
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1300.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1295.652 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1310.039 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1304.742 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete, checksum: a2c9c724
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+39 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.039 ; gain = 55.820
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1304.742 ; gain = 35.879
 INFO: [Common 17-1381] The checkpoint 'D:/SoC/PYNQ-Z2/eFPGA_AXI/eFPGA_AXI.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jun  3 16:03:54 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  3 16:14:42 2023...
