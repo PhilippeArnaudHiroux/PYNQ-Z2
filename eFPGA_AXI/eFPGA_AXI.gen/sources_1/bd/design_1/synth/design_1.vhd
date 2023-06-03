@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Sat Jun  3 15:47:15 2023
+--Date        : Sat Jun  3 16:02:52 2023
 --Host        : DESKTOP-89VC88I running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -611,6 +611,7 @@ entity design_1 is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    getal2_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     resultaat_0 : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
@@ -731,6 +732,7 @@ architecture STRUCTURE of design_1 is
   );
   end component design_1_rst_ps7_0_100M_0;
   signal eFPGA_AXI_Core1_0_resultaat : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal getal2_0_1 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -844,10 +846,11 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
+  getal2_0_1(3 downto 0) <= getal2_0(3 downto 0);
   resultaat_0(3 downto 0) <= eFPGA_AXI_Core1_0_resultaat(3 downto 0);
 eFPGA_AXI_Core1_0: component design_1_eFPGA_AXI_Core1_0_0
      port map (
-      getal2(3 downto 0) => B"0000",
+      getal2(3 downto 0) => getal2_0_1(3 downto 0),
       resultaat(3 downto 0) => eFPGA_AXI_Core1_0_resultaat(3 downto 0),
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
       s00_axi_araddr(3 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(3 downto 0),

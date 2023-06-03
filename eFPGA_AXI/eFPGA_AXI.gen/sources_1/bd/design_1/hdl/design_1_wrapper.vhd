@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Sat Jun  3 15:47:15 2023
+--Date        : Sat Jun  3 16:02:52 2023
 --Host        : DESKTOP-89VC88I running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -34,6 +34,7 @@ entity design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    getal2_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     resultaat_0 : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
 end design_1_wrapper;
@@ -62,7 +63,8 @@ architecture STRUCTURE of design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    resultaat_0 : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    resultaat_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    getal2_0 : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_1;
 begin
@@ -89,6 +91,7 @@ design_1_i: component design_1
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      getal2_0(3 downto 0) => getal2_0(3 downto 0),
       resultaat_0(3 downto 0) => resultaat_0(3 downto 0)
     );
 end STRUCTURE;
