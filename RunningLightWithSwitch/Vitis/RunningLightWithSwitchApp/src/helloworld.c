@@ -8,13 +8,14 @@
 XGpio Gpio;
 XGpio Gpio1;
 
+#define OUT	 0x0
 #define LED1 0x1
 #define LED2 0x2
 #define LED3 0x4
 #define LED4 0x8
 
 #define SIZE 4
-
+#define SLEEP_TIME 100000
 
 int main()
 {
@@ -34,21 +35,17 @@ int main()
 	char toLeft[SIZE] = {LED1, LED2, LED3, LED4};
 	char toRight[SIZE] = {LED4, LED3, LED2, LED1};
 	char toBoth[SIZE+2] = {LED1, LED2, LED3, LED4, LED3, LED2};
-
-	data = XGpio_DiscreteRead(&Gpio, 1);
-	printf("%u", data);
-	sleep(1);
-
-
-
 	while(1)
 	{
+		data = XGpio_DiscreteRead(&Gpio, 1);
+		printf("%u", data);
+
 		if(data == 1)
 		{
 			for(int i=0; i<SIZE; i++)
 			{
 				XGpio_DiscreteWrite(&Gpio1, 1, toRight[i]);
-				sleep(1);
+				usleep(SLEEP_TIME);
 			}
 		}
 		else if(data == 2)
@@ -56,7 +53,7 @@ int main()
 			for(int i=0; i<SIZE; i++)
 			{
 				XGpio_DiscreteWrite(&Gpio1, 1, toLeft[i]);
-				sleep(1);
+				usleep(SLEEP_TIME);
 			}
 		}
 		else if(data == 3)
@@ -64,13 +61,14 @@ int main()
 			for(int i=0; i<SIZE+2; i++)
 			{
 				XGpio_DiscreteWrite(&Gpio1, 1, toBoth[i]);
-				sleep(1);
+				usleep(SLEEP_TIME);
 			}
 		}
+		else
+		{
+			XGpio_DiscreteWrite(&Gpio1, 1, OUT);
+		}
 	}
-
-
-
 
     cleanup_platform();
     return 0;
