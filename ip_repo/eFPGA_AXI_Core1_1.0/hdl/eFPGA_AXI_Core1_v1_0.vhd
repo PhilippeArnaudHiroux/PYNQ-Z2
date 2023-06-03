@@ -16,6 +16,8 @@ entity eFPGA_AXI_Core1_v1_0 is
 	);
 	port (
 		-- Users to add ports here
+		getal2: in std_logic_vector(3 downto 0);
+		resultaat: out std_logic_vector(3 downto 0);
 
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -55,6 +57,8 @@ architecture arch_imp of eFPGA_AXI_Core1_v1_0 is
 		C_S_AXI_ADDR_WIDTH	: integer	:= 4
 		);
 		port (
+		getal2: in std_logic_vector(3 downto 0);
+		resultaat: out std_logic_vector(3 downto 0);
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
 		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -88,6 +92,8 @@ eFPGA_AXI_Core1_v1_0_S00_AXI_inst : eFPGA_AXI_Core1_v1_0_S00_AXI
 		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH
 	)
 	port map (
+	    getal2 => getal2,
+	    resultaat => resultaat, 
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,
 		S_AXI_AWADDR	=> s00_axi_awaddr,

@@ -16,7 +16,8 @@ entity eFPGA_AXI_Core1_v1_0_S00_AXI is
 	);
 	port (
 		-- Users to add ports here
-
+        getal2: in std_logic_vector(3 downto 0);
+        resultaat: out std_logic_vector(3 downto 0);
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -117,6 +118,16 @@ architecture arch_imp of eFPGA_AXI_Core1_v1_0_S00_AXI is
 	signal reg_data_out	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
+	
+	signal resultaat_i: std_logic_vector(3 downto 0);
+	
+	component eFPGA_Core1
+	port(
+	       getal1: in std_logic_vector(3 downto 0);
+	       getal2: in std_logic_vector(3 downto 0);
+	       resultaat: out std_logic_vector(3 downto 0)
+	 );
+	 end component;
 
 begin
 	-- I/O Connections assignments
@@ -357,7 +368,8 @@ begin
 	      when b"01" =>
 	        reg_data_out <= slv_reg1;
 	      when b"10" =>
-	        reg_data_out <= slv_reg2;
+	        reg_data_out <= (others=>'0');
+	        reg_data_out(3 downto 0) <= resultaat_i;
 	      when b"11" =>
 	        reg_data_out <= slv_reg3;
 	      when others =>
@@ -385,6 +397,12 @@ begin
 
 
 	-- Add user logic here
+	Core1: eFPGA_Core1
+	port map(
+	   getal1  => slv_reg0(3 downto 0),
+	   getal2  => getal2(3 downto 0),
+	   resultaat => resultaat_i
+   );
 
 	-- User logic ends
 

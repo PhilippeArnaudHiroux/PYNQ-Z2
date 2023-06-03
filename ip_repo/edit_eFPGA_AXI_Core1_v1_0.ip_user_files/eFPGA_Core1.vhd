@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 03.06.2023 15:00:04
+-- Create Date: 03.06.2023 15:28:42
 -- Design Name: 
 -- Module Name: eFPGA_Core1 - Behavioral
 -- Project Name: 
@@ -32,11 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity eFPGA_Core1 is
-  Port (
-        getal1:     in std_logic_vector(3 downto 0);
-        getal2:     in std_logic_vector(3 downto 0);
-        resultaat:  out std_logic_vector(3 downto 0)
-   );
+--  Port ( );
 end eFPGA_Core1;
 
 architecture Behavioral of eFPGA_Core1 is
