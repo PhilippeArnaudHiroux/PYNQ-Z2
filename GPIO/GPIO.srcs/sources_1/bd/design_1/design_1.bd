@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE7B203F688F9DFAF",
+      "boundary_crc": "0x16F14FEEDBC23C2A",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../GPIO.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -93,6 +93,11 @@
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
       },
       "GPIO_Outputs": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
+      },
+      "GPIO_0_0": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
@@ -2093,6 +2098,12 @@
         "interface_ports": [
           "FIXED_IO",
           "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "processing_system7_0_GPIO_0": {
+        "interface_ports": [
+          "GPIO_0_0",
+          "processing_system7_0/GPIO_0"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {

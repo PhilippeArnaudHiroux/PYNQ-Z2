@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Sat Jun  3 11:29:59 2023
+--Date        : Sat Jun  3 11:32:30 2023
 --Host        : DESKTOP-89VC88I running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -599,6 +599,9 @@ entity design_1 is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    GPIO_0_0_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    GPIO_0_0_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    GPIO_0_0_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
     GPIO_Inputs_tri_i : in STD_LOGIC_VECTOR ( 1 downto 0 );
     GPIO_Outputs_tri_o : out STD_LOGIC_VECTOR ( 1 downto 0 )
   );
@@ -745,6 +748,9 @@ architecture STRUCTURE of design_1 is
   signal processing_system7_0_FIXED_IO_PS_CLK : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_PS_PORB : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_PS_SRSTB : STD_LOGIC;
+  signal processing_system7_0_GPIO_0_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal processing_system7_0_GPIO_0_TRI_O : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal processing_system7_0_GPIO_0_TRI_T : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_M_AXI_GP0_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal processing_system7_0_M_AXI_GP0_ARBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal processing_system7_0_M_AXI_GP0_ARCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -802,8 +808,6 @@ architecture STRUCTURE of design_1 is
   signal ps7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
-  signal NLW_processing_system7_0_GPIO_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_processing_system7_0_GPIO_T_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -834,11 +838,17 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
+  attribute X_INTERFACE_INFO of GPIO_0_0_tri_i : signal is "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_I";
+  attribute X_INTERFACE_INFO of GPIO_0_0_tri_o : signal is "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_O";
+  attribute X_INTERFACE_INFO of GPIO_0_0_tri_t : signal is "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_T";
   attribute X_INTERFACE_INFO of GPIO_Inputs_tri_i : signal is "xilinx.com:interface:gpio:1.0 GPIO_Inputs ";
   attribute X_INTERFACE_INFO of GPIO_Outputs_tri_o : signal is "xilinx.com:interface:gpio:1.0 GPIO_Outputs ";
 begin
+  GPIO_0_0_tri_o(3 downto 0) <= processing_system7_0_GPIO_0_TRI_O(3 downto 0);
+  GPIO_0_0_tri_t(3 downto 0) <= processing_system7_0_GPIO_0_TRI_T(3 downto 0);
   GPIO_Outputs_tri_o(1 downto 0) <= axi_gpio_0_GPIO2_TRI_O(1 downto 0);
   axi_gpio_0_GPIO_TRI_I(1 downto 0) <= GPIO_Inputs_tri_i(1 downto 0);
+  processing_system7_0_GPIO_0_TRI_I(3 downto 0) <= GPIO_0_0_tri_i(3 downto 0);
 axi_gpio_0: component design_1_axi_gpio_0_0
      port map (
       gpio2_io_o(1 downto 0) => axi_gpio_0_GPIO2_TRI_O(1 downto 0),
@@ -884,9 +894,9 @@ processing_system7_0: component design_1_processing_system7_0_0
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
-      GPIO_I(3 downto 0) => B"0000",
-      GPIO_O(3 downto 0) => NLW_processing_system7_0_GPIO_O_UNCONNECTED(3 downto 0),
-      GPIO_T(3 downto 0) => NLW_processing_system7_0_GPIO_T_UNCONNECTED(3 downto 0),
+      GPIO_I(3 downto 0) => processing_system7_0_GPIO_0_TRI_I(3 downto 0),
+      GPIO_O(3 downto 0) => processing_system7_0_GPIO_0_TRI_O(3 downto 0),
+      GPIO_T(3 downto 0) => processing_system7_0_GPIO_0_TRI_T(3 downto 0),
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
