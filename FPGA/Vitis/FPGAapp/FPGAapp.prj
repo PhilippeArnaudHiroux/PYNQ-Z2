@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="FPGAapp" location="D:/SoC/PYNQ-Z2/FPGA/Vitis/FPGAapp" platform="D:/SoC/PYNQ-Z2/FPGA/Vitis/FPGAxsa/export/FPGAxsa/FPGAxsa.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="FPGAapp_system" sysConfig="FPGAxsa" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="4ad5dab17802629f7e0cd54aa7cc21c8">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.638689056">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1553666986" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
